@@ -8,17 +8,17 @@
 //   setCounter(0)
 // }
 
-export function setupCounter(El) {
-  var x = 0
+export function setupCounter(element) {
+  let x = 0;
 
-  function a(b) {
+  function plusplus(b) {
     x = b
-    El.innerHTML = 'count is ' + x
+    element.innerHTML = 'count is ' + x
   }
 
-  El.onclick = function () {
-    a(x + 1)
+  element.onclick = function () {
+    plusplus(x + 1)
   }
 
-  a()
+  plusplus()
 }
